@@ -1,0 +1,16 @@
+package com.mycompany.imc;
+import java.util.Scanner;
+public class Imc {
+
+    public static void main(String[]args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Informe seu Nome");
+        String nome = sc.nextLine();
+        System.out.println("Informe seu Peso");
+        float peso = sc.nextFloat();
+        System.out.println("Informe sua altura");
+        float altura = sc.nextFloat();
+        float imc = peso / (altura*altura);
+        System.out.println("Ola"+nome+", Com o peso de"+peso+"\n"+"e sua altura de"
+        +altura+", seu IMC eh de:"+imc+".");
+}
